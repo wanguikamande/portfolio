@@ -1,0 +1,84 @@
+/* PRESETS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap');
+
+body, html {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.dmsans {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
+/* END OF PRESETS */
+
+
+/* NAVIGATION */
+
+/* END OF NAVIGATION */
+
+
+/*MEDIA QUERIES*/
+/* Larger than normal laptop sizes */
+@media only screen and (max-width: 1700px) and (min-width: 1501px){
+
+    /*  */
+    /*  */
+
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1200px){
+
+    /*  */
+    /*  */
+
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+
+    /*  */
+    /*  */
+
+}
+
+/* COL M stops here */
+@media only screen and (max-width: 991px) and (min-width: 959px) {
+
+    /*  */
+    /*  */
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (min-width: 768px) and (max-width: 958px) {
+
+    /*  */
+    /*  */
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    /*  */
+    /*  */
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+    /*  */
+    /*  */
+
+}
+
+/* Mobile Portrait Size iphone 5 */
+@media only screen and (max-width: 319px) {
+    
+
+    /*  */
+    /*  */
+
+}
+/*END OF MEDIA QUERIES*/
