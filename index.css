@@ -1,5 +1,5 @@
 /* PRESETS */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&Playfair+Display:wght@400;700&display=swap');
 
 body, html {
     position: relative;
@@ -10,11 +10,135 @@ body, html {
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
 }
+
+.playfair-heavy {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+/* .white-text {
+    color: #f5f5f5 !important;
+} */
+
+/* .orange-text {
+    color: #FC814A;
+} */
+
+.green-text {
+    color: #136F63;
+}
+
+.black-text {
+    color: #212121;
+}
+
+.grey-text {
+    color: #909090;
+}
 /* END OF PRESETS */
 
 
-/* NAVIGATION */
+/* COVER */
+#cover {
+    height: 100vh !important;
+    background: #ffffff;
+    position: relative;
+}
 
+#cover .cover-content {
+    background: #f5f5f5;
+    position: absolute;
+    margin: 48px;
+    height: calc(100vh - 96px);
+    width: calc(100vw - 96px);
+    padding: 48px 40px;
+}
+
+.cover-content .row .left-content {
+    padding-left: 20%;
+}
+
+.cover-content .row .left-content p.dmsans {
+    color: rgba(252, 129, 74, 0.8);
+    padding-top: 160px;
+    font-size: 24px;
+}
+
+.cover-content .row .left-content h1 {
+    font-size: 50px;
+    line-height: 75px;
+}
+
+.cover-content .row .left-content p.pronunciation {
+    /* padding-top: 10px; */
+    font-size: 25px;
+    
+}
+
+.cover-content .row .left-content p.pronunciation span i {
+    font-size: 40px;
+    padding-right: 15px;
+    font-weight: 1;
+}
+/* END OF COVER */
+
+
+/* NAVIGATION */
+nav {
+    /* transition: all .5s ease-in-out; */
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+nav .container-fluid .navbar-brand img {
+    height: 38px;
+    width: auto;
+}
+
+nav .container-fluid button {
+    border: none;
+}
+
+nav .container-fluid .collapse li {
+    padding-left: 10px;
+    padding-right: 20px;
+    padding: 5px 30px 5px 10px;
+}
+
+nav .container-fluid .collapse a {
+    font-size: 20px;
+    text-decoration: none !important;
+    color: #f5f5f5;
+    /* transition: 0.7s; */
+}
+
+nav .nav-item:last-child .nav-link {
+    border-bottom: none;
+}
+
+nav .nav-item .nav-link.active,
+nav .nav-item .nav-link:active,
+nav .nav-item .nav-link:hover,
+nav .nav-item .nav-link:focus {
+    color: #FC814A;
+    font-weight: 500;
+}
+
+nav .navbar-toggler i {
+    color: white;
+    font-size: 35px;
+}
+
+nav .navbar-toggler:focus {
+    box-shadow: none;
+}
 /* END OF NAVIGATION */
 
 
