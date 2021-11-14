@@ -15,7 +15,7 @@
     <meta property="og:image" content="images/favicon.png">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-    <title></title>
+    <title>Wangui Kamande | Product Designer & Software Developer</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -32,27 +32,29 @@
 
 
 <!-- Navigation -->
-<nav class="navbar fixed-top navbar-expand-xl" id="theNav">
+<nav class="d-xxl-block navbar fixed-top navbar-expand-xl" id="theNav">
     <div class="container-fluid">
         <a class="navbar-brand" id="white-logo" href="#home">
             <img src="images/logo.png" alt="Wangui Kamande" />
         </a>
-        <button class="navbar-toggler" type="button" onclick="openNav()" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-list" id="menu"></i>
+        <button class="navbar-toggler black-text" type="button" onclick="openNav()" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots-vertical" id="menu"></i>
         </button>
         <div class="collapse navbar-collapse d-xl-flex justify-content-xl-end" id="navbarNavDropdown">
-            <ul class="navbar-nav dmsans pt-lg-3">
+            <ul class="navbar-nav dmsans" id="nav-links">
                 <li class="nav-item">
-                    <a class="nav-link active" type="button" href="#/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!">work</a>
+                    <a class="nav-link normal-link" type="button" href="#/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!">work</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" type="button" href="#/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!">about</a>
+                    <a class="nav-link normal-link" type="button" href="#/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!">about</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" type="button" href="#/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!">contact</a>
+                    <a class="nav-link normal-link" type="button" href="#/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!">contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn" type="button" href="#/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!"></a>
+                    <a class="nav-link" type="button" href="#/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!">
+                        <i class="bi bi-moon"></i>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -61,32 +63,61 @@
 <!-- End of Navigation -->
 
 
+<!-- Side Navigation -->
+<div id="mobilenavigation" class="sidenav shadow-lg">
+    <div class="top-content">
+        <a class="navbar-brand" href="#home">
+            <img src="images/logo.png" alt="Wangui Kamande" />
+        </a>
+        <a href="javascript:void(0)" class="closebtn bi bi-x" onclick="closeNav()"></a><br><br><br><hr class="mt-md-5" />
+    </div>
+    
+    <ul class="navbar-nav dmsans black-text text-center" id="sidenav-links">
+        <li class="nav-item">
+            <a class="nav-link normal-side-link" type="button" href="#/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!">work</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link normal-side-link" type="button" href="#/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!">about</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link normal-side-link" type="button" href="#/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!">contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" type="button" href="#/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!">
+                <i class="bi bi-moon"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- End of Side Navigation -->
+
+
 <!-- Cover -->
 <div id="cover">
 
     <div class="row cover-content">
 
-        <div class="col-6">
+        <div class="col-xxl-6 col-xl-6 col-12 d-flex align-items-center">
             <div class="left-content">
-                <p class="dmsans">hello</p>
+                <p class="dmsans hello">hello</p>
                 <h1>
                     <span class="playfair black-text">I'm</span>
                     <span class="playfair-heavy green-text">Wangui Kamande</span>
                 </h1>
-                <p class="pronunciation grey-text d-flex">
-                    <i class="bi bi-volume-up"></i>
+                <a href="#void" onclick="playAudio('images/pronunciation.mp3')" class="pronunciation grey-text d-flex dmsans">
+                    <i class="bi bi-volume-up" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click me"></i>
                     Pronunciation : / wɑ:.ŋgʊ.ɪ kʌmɑ:nde /
-                </p>
+                </a>
                 <h2 class="playfair black-text">
                     A versatile human being. A data science and machine learning enthusiast. A market intelligence analyst and visual designer. An empath who endeavours to enhance experiences and find modern solutions to modern problems.
                 </h2>
-                <a href="#/" type="button" class="btn btn-lg green-text dmsans mt-4 text-center">View my work</a>
+                <a href="#/" type="button" class="btn btn-lg green-text dmsans mt-2 mt-md-4 mt-lg-3 mt-xxl-4 text-center">View my work</a>
             </div>
 
         </div>
 
-        <div class="col-6">
-        
+        <div class="col-xxl-6 col-12 col-xl-6 d-xl-flex align-items-center d-none" id="the-svg">
+            <img src="images/wangui.svg" class="ms-xl-auto me-xl-auto ms-xxl-0 me-xxl-0" alt=""/>        
         </div>
 
 
@@ -98,6 +129,7 @@
 
 <!-- JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
 
 <script src="index.js"></script>
 
