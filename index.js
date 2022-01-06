@@ -81,3 +81,25 @@ function openNav() {
 function closeNav() {
     document.getElementById("mobilenavigation").style.width = "0";
 }
+
+
+// Navigation Scroll
+var theNav = document.getElementById("theNav");
+var black = document.getElementById("black-logo");
+var white = document.getElementById("white-logo");
+var menuLogo = document.getElementById("menu");
+
+let classesToAdd = ['scroll', 'pt-1', 'pb-1'];
+
+window.onscroll = function () {
+    "use strict";
+    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
+        theNav.classList.add(...classesToAdd);
+        black.classList.add("d-none");
+        white.classList.remove("d-none");
+    } else {
+        theNav.classList.remove(...classesToAdd);
+        black.classList.remove("d-none");
+        white.classList.add("d-none");
+    }
+};
