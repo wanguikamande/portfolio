@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 
     <!-- Custom Styles -->
+    <link href="docSlider-3.0.1/docSlider.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 
 </head>
@@ -32,14 +33,14 @@
 
 
 <!-- Navigation -->
-<nav class="d-xxl-block navbar fixed-top navbar-expand-xl">
+<nav class="d-xxl-block navbar fixed-top navbar-expand-xl" id="theNav">
     <div class="container-fluid" id="theNav">
         <a class="navbar-brand" id="black-logo" href="#home">
             <img src="images/logo.png" alt="Wangui Kamande" />
         </a>
-        <a class="navbar-brand" id="white-logo" href="#home">
+        <!-- <a class="navbar-brand" id="white-logo" href="#home">
             <img src="images/logo-white.png" alt="Wangui Kamande" />
-        </a>
+        </a> -->
         <button class="navbar-toggler black-text" type="button" onclick="openNav()" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots-vertical" id="menu"></i>
         </button>
@@ -95,8 +96,11 @@
 <!-- End of Side Navigation -->
 
 
+<div class="docSlider">
+
+
 <!-- Cover -->
-<div id="cover">
+<section id="cover">
 
     <div class="row cover-content">
 
@@ -117,44 +121,50 @@
         </div>
 
         <div class="col-xxl-6 col-12 col-xl-6 d-xl-flex align-items-center d-none" id="the-svg">
-            <img src="images/wangui.svg" class="ms-xl-auto me-xl-auto ms-xxl-0 me-xxl-0" alt=""/>        
+            <img src="images/wangui.svg" class="ms-xl-auto me-xl-auto ms-xxl-0 me-xxl-0" alt=""/>
         </div>
 
 
     </div>
 
-</div>
+</section>
 <!-- End Of Cover -->
 
 
 <!-- Work -->
-<div id="work">
+<section>
 
-    <div class="row work-content">
+    <div id="work">
 
-        <div class="col-xxl-6 col-xl-6 col-12 d-flex align-items-center">
-            <div class="container-fluid text-end">
-                <h1 class="playfair black-text title">Web Development & UI for Leicunn Studio Blog</h1>
-                <p class="dmsans grey-text pt-xxl-3">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps.</p>
-                <a href="#/" type="button" class="btn btn-lg green-text dmsans p-1 mt-xxl-0 text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!">Read More</a>
-            </div>            
-        </div>
-
-        <div class="col-xxl-6 col-xl-6 col-12 d-flex align-items-center header-img">
-            <div class="container-fluid turqoise-portfolio text-center">
-                <img src="images/leicunnstudioblog.png" class="d-table-cell" alt="leicunn studio blog web design" />
+        <div class="row work-content">
+    
+            <div class="col-xxl-6 col-xl-6 col-12 d-flex align-items-center">
+                <div class="container-fluid text-end">
+                    <h1 class="playfair black-text title">Web Development & UI for Leicunn Studio Blog</h1>
+                    <p class="dmsans grey-text pt-xxl-3">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps.</p>
+                    <a href="#/" type="button" class="btn btn-lg green-text dmsans p-1 mt-xxl-0 text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Coming Soon!">Read More</a>
+                </div>
             </div>
+    
+            <div class="col-xxl-6 col-xl-6 col-12 d-flex align-items-center header-img">
+                <div class="container-fluid turqoise-portfolio d-flex align-items-center justify-content-center">
+                    <img src="images/leicunnstudioblog.png" class="" alt="leicunn studio blog web design" />
+                </div>
+            </div>
+    
         </div>
-
+    
     </div>
 
 </div>
-
 <!-- End Of Work -->
+
+</div>
 
 
 <!-- JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="docSlider-3.0.1/docSlider.min.js"></script>
 
 
 <script src="index.js"></script>
