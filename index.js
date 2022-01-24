@@ -24,20 +24,23 @@
 
 // docSlider initialization
 var theNav = document.getElementById("theNav");
-let classesToAdd = ['scroll', 'pb-3'];
+// let largeSizeClassesToAdd = ['scroll', 'pb-3'];
+let classesToAdd = ['scroll', 'scroll-mobile', 'pb-3'];
 
 docSlider.init({
     speed : 550,
     easing : 'ease-in-out',
-    afterChange : function(index){
+    // afterChange : function(index){
 
-        if (index == 0) {
-            theNav.classList.remove(...classesToAdd);
-        } else if (index > 0) {
-            theNav.classList.add(...classesToAdd);
-        }
-
-    }
+    //     if (window.innerWidth < 1199) {
+    //         if (index == 0) {
+    //             theNav.classList.remove(...classesToAdd);
+    //         } else if (index > 0) {
+    //             theNav.classList.add(...classesToAdd);
+    //         }
+    //     }
+        
+    // }
 });
 
 
