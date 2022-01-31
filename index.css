@@ -1,5 +1,6 @@
 /* PRESETS */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Space+Grotesk:wght@300;400;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Space+Grotesk:wght@300;400;500&family=Sen:wght@400;300&family=Be+Vietnam+Pro:wght@200;300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300&family=DM+Sans&family=Outfit:wght@100;200&family=Overpass+Mono:wght@300&family=Playfair+Display:wght@400;500;700&family=Sen&family=Space+Grotesk:wght@300;400&display=swap');
 
 
 body, html {
@@ -10,6 +11,13 @@ body, html {
 .space {
     font-family: 'Space Grotesk', sans-serif !important;
     font-weight: 400;
+    /* font-family: 'Outfit', monospace !important;
+    font-weight: 300; */
+    /* font-family: 'Sen', sans-serif !important; */
+    /* font-family: 'Be Vietnam Pro', sans-serif !important;
+    font-weight: 400; */
+    /* font-family: 'DM Sans', sans-serif !important;
+    font-weight: 400; */
 }
 
 .playfair-heavy {
@@ -40,7 +48,10 @@ body, html {
 
 .grey-text {
     /* color: #808080; */
-    color: dimgray;
+    /* color: dimgray; */
+    /* color: #989898; */
+    /* color: #909090; */
+    color: #A0A0A0;
 }
 
 .grey-background {
@@ -458,7 +469,7 @@ nav.scroll .container-fluid .collapse a {
 .work-content p {
     font-size: 21px;
     padding-left: 45px;
-    font-weight: 300;
+    /* font-weight: 300; */
 }
 
 .even .work-content p {
@@ -1423,7 +1434,7 @@ nav.scroll .container-fluid .collapse a {
     /* END OF COVER */
 
     /* WORK */
-    .work-content .col-xxl-6:first-child {
+    /* .work-content .col-xxl-6:first-child {
         padding-left: 50px;
         padding-right: 50px;
         padding-top: 150px;
@@ -1467,12 +1478,85 @@ nav.scroll .container-fluid .collapse a {
 
     .work-content .col-xxl-6:last-child .container-fluid {
         padding: 0 10px;
-        /* margin: 0 50px; */
         width: 90%;
         height: auto;
     }
 
     .work-content .header-img img {
+        width: 94%;
+        height: auto;
+    } */
+    /* END OF WORK */
+
+    /* WORK */
+    #work.work, .work {
+        min-height: 100%;
+    }
+
+    .work-content.section-dimensions {
+        /* margin: 15px;
+        min-height: calc(100% - 30px);
+        height: auto;
+        width: calc(100vw - 30px); */
+
+        margin: 50px;
+        height: calc(100vh - 100px);
+        width: calc(100vw - 100px);
+    }
+
+    .work-content .col-xxl-6:first-child {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+
+    .work-content .col-xxl-6:last-child {
+        padding-left: 0;
+        padding-top: 15px;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .work-content .col-xxl-6:first-child .container-fluid {
+        padding: 0 !important;
+    }
+
+    .work-content .title,
+    .work-content p {
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .work-content .title {
+        font-size: 35px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .work-content p {
+        font-size: 25px;
+        padding: 10px 0 0 0;
+        line-height: 1.7;
+        /* font-weight: 300 !important; */
+    }
+
+    .work-content .col-xxl-6 a.btn {
+        font-size: 23px;
+    }
+
+    .work-content .col-xxl-6:last-child .container-fluid {
+        /* padding: 0 15px; */
+        /* padding: 20px 0; */
+        /* width: 100%; */
+        /* height: 100%; */
+        /* padding: 0 10px; */
+        width: 90%;
+        height: auto;
+    }
+
+    .work-content .header-img img {
+        /* width: 80%; */
         width: 94%;
         height: auto;
     }
@@ -1662,26 +1746,29 @@ nav.scroll .container-fluid .collapse a {
     /* END OF DOCSLIDER */
 
     /* WORK */
-    .work {
-        height: 100% !important;
+    #work.work, .work {
+        min-height: 100%;
     }
 
     .work-content.section-dimensions {
-        min-height: calc(100% - 30px) !important;
-        min-width: calc(100% - 30px) !important;
+        margin: 15px;
+        min-height: calc(100% - 30px);
+        height: auto;
+        width: calc(100vw - 30px);
     }
 
     .work-content .col-xxl-6:first-child {
         padding-left: 30px;
         padding-right: 30px;
-        padding-top: 100px;
-        padding-bottom: 30px;
+        padding-top: 85px;
+        padding-bottom: 20px;
     }
 
     .work-content .col-xxl-6:last-child {
         padding-left: 0;
-        padding-top: 10px;
+        padding-top: 15px;
         padding-right: 0;
+        padding-bottom: 20px;
     }
 
     .work-content .col-xxl-6:first-child .container-fluid {
@@ -1691,36 +1778,35 @@ nav.scroll .container-fluid .collapse a {
     .work-content .title,
     .work-content p {
         line-height: 1.5;
-        text-align: justify;
+        text-align: left;
     }
 
     .work-content .title {
-        font-size: 27px;
+        font-size: 25px;
         line-height: 1.4;
-        text-align: justify;
+        text-align: left;
     }
 
-    .work-content p,
-    .work-content .col-xxl-6.order-xxl-1 p {
+    .work-content p {
         font-size: 18px;
-        padding: 10px 0 0 0;
-        font-weight: 300;
-        line-height: 1.7;
+        padding: 0;
+        line-height: 1.5;
+        /* font-weight: 300 !important; */
     }
 
     .work-content .col-xxl-6 a.btn {
-        font-size: 16px;
-        margin-bottom: 20px;
+        font-size: 17px;
     }
 
     .work-content .col-xxl-6:last-child .container-fluid {
-        padding: 0 10px;
-        width: 90%;
-        height: 120%;
+        /* padding: 0 15px; */
+        padding: 20px 0;
+        width: 100%;
+        height: 100%;
     }
 
     .work-content .header-img img {
-        width: 90%;
+        width: 80%;
         height: auto;
     }
     /* END OF WORK */
@@ -1906,17 +1992,29 @@ nav.scroll .container-fluid .collapse a {
     /* END OF COVER */
 
     /* WORK */
+    #work.work, .work {
+        min-height: 100%;
+    }
+
+    .work-content.section-dimensions {
+        margin: 15px;
+        min-height: calc(100% - 30px);
+        height: auto;
+        width: calc(100vw - 30px);
+    }
+
     .work-content .col-xxl-6:first-child {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
         padding-top: 85px;
         padding-bottom: 20px;
     }
 
     .work-content .col-xxl-6:last-child {
         padding-left: 0;
-        padding-top: 10px;
+        padding-top: 0;
         padding-right: 0;
+        padding-bottom: 20px;
     }
 
     .work-content .col-xxl-6:first-child .container-fluid {
@@ -1926,20 +2024,19 @@ nav.scroll .container-fluid .collapse a {
     .work-content .title,
     .work-content p {
         line-height: 1.5;
-        text-align: justify;
+        text-align: left;
     }
 
     .work-content .title {
         font-size: 23px;
         line-height: 1.4;
-        text-align: justify;
+        text-align: left;
     }
 
-    .work-content p,
-    .work-content .col-xxl-6.order-xxl-1 p {
-        font-size: 17px;
+    .work-content p {
+        font-size: 16px;
         padding: 0;
-        font-weight: 300;
+        /* font-weight: 300 !important; */
     }
 
     .work-content .col-xxl-6 a.btn {
@@ -1948,12 +2045,12 @@ nav.scroll .container-fluid .collapse a {
 
     .work-content .col-xxl-6:last-child .container-fluid {
         padding: 0 10px;
-        width: 100%;
+        width: 90%;
         height: 250px;
     }
 
     .work-content .header-img img {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
     /* END OF WORK */
@@ -2157,8 +2254,8 @@ nav.scroll .container-fluid .collapse a {
     }
 
     .work-content .col-xxl-6:first-child {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
         padding-top: 85px;
         padding-bottom: 20px;
     }
@@ -2177,19 +2274,19 @@ nav.scroll .container-fluid .collapse a {
     .work-content .title,
     .work-content p {
         line-height: 1.5;
-        text-align: justify;
+        text-align: left;
     }
 
     .work-content .title {
-        font-size: 23px;
+        font-size: 20px;
         line-height: 1.4;
-        text-align: justify;
+        text-align: left;
     }
 
     .work-content p {
-        font-size: 17px;
+        font-size: 16px;
         padding: 0;
-        font-weight: 300;
+        /* font-weight: 300 !important; */
     }
 
     .work-content .col-xxl-6 a.btn {
